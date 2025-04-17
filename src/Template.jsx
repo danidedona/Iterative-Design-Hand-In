@@ -16,13 +16,17 @@ const colors = {
 };
 
 const sections = [
-  { id: "sec1", label: "Sec1" },
-  { id: "sec2", label: "Sec2" },
-  { id: "sec3", label: "Sec3" },
+  { id: "sec1", label: "Sketching and Wireframing" },
+  { id: "sec2", label: "Hi-Fi Prototype" },
+  { id: "sec3", label: "Founder Feedback" },
 ];
 
 // Topics are used for fluid word list animation
-const topics = ["topic 1", "topic 2", "topic 3"];
+const topics = [
+  "Sketching and Wireframing",
+  "Hi-Fi Prototype",
+  "Founder Feedback",
+];
 
 const Template = () => {
   //////////////////////////////////////////////////////////////////////////////
