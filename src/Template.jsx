@@ -159,13 +159,12 @@ const Template = () => {
           <p className="mt-8 mb-4">Why its important</p>
 
           <p className="my-4">
-            In this Iterative Design & Evaluation project, our team partnered
+            In this project, our team partnered
             with Warp to address a key usability gap: the lack of a centralized
             dashboard where users can manage their account, team, sessions, and
             explore AI features. As Warp expands its collaborative and
             cloud-based tools, this feature would serve as the foundation for a
             more guided, discoverable, and intelligent user experience. 
-            
             In working directly with a startup, this project challenged us to think
             critically about users, iterate based on feedback, and balance
             design creativity with business needs.
