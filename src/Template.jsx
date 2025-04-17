@@ -156,17 +156,17 @@ const Template = () => {
         {/* Left Side (3/4) */}
         <div className="w-3/4 text-left">
           <h2 className="text-3xl font-bold">Project description</h2>
-          <p className="mt-8 mb-4">Why its important</p>
-
           <p className="my-4">
-            In this project, our team partnered
-            with Warp to address a key usability gap: the lack of a centralized
-            dashboard where users can manage their account, team, sessions, and
-            explore AI features. As Warp expands its collaborative and
-            cloud-based tools, this feature would serve as the foundation for a
-            more guided, discoverable, and intelligent user experience. 
-            In working directly with a startup, this project challenged us to think
-            critically about users, iterate based on feedback, and balance
+            In this project, our team partnered with Warp to address a key
+            usability gap: the lack of a centralized dashboard where users can
+            manage their account, team, sessions, and explore AI features. As
+            Warp expands its collaborative and cloud-based tools, this feature
+            would serve as the foundation for a more guided, discoverable, and
+            intelligent user experience.
+          </p>
+          <p className="my-4">
+            In working directly with a startup, this project challenged us to
+            think critically about users, iterate based on feedback, and balance
             design creativity with business needs.
           </p>
         </div>
@@ -180,16 +180,17 @@ const Template = () => {
           </p>
           <h3 className="text-2xl font-bold mt-4">Project Duration</h3>
           <p>4 Weeks</p>
-          <h3 className="text-2xl font-bold mt-4">Research Refences</h3>
+          <h3 className="text-2xl font-bold mt-4">Team Member</h3>
           <ul className="list-disc list-inside">
             <li>
               <a
+                // potentially add our linkedin / portfolio links?
                 href="https://mail.google.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-500"
+                // className="text-blue-500"
               >
-                https://mail.google.com
+                Daniela DeDona
               </a>
             </li>
             <li>
@@ -197,9 +198,9 @@ const Template = () => {
                 href="https://docs.google.com/forms"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-500"
+                // className="text-blue-500"
               >
-                https://docs.google.com/forms
+                Mia Nguyen
               </a>
             </li>
             <li>
@@ -207,9 +208,19 @@ const Template = () => {
                 href="https://www.notion.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-500"
+                // className="text-blue-500"
               >
-                https://www.notion.com
+                Jacob Stifelman
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.notion.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                // className="text-blue-500"
+              >
+                Efram Geller
               </a>
             </li>
           </ul>
