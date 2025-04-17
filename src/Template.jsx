@@ -155,7 +155,7 @@ const Template = () => {
       <section className="w-full flex flex-row py-16 px-14 bg-[var(--color-light)]">
         {/* Left Side (3/4) */}
         <div className="w-3/4 text-left">
-          <h2 className="text-3xl font-bold">Title</h2>
+          <h2 className="text-3xl font-bold">Project description</h2>
           <p className="mt-8 mb-4">Why its important</p>
 
           <p className="my-4">
