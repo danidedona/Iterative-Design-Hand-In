@@ -607,10 +607,93 @@ const Template = () => {
                 Hi-Fi Prototype
               </h1>
 
-              <p>...</p>
+              <p>
+                Building on the wireframes and stakeholder critique, we crafted
+                a <span className="font-semibold">Hi-Fi Figma prototype</span>{" "}
+                that looks, feels, and navigates like finished Warp Home.
+              </p>
+
+              <p>
+                <span className="font-semibold">Home dashboard.</span> We pulled
+                the most requested onboarding featured directly onto the landing
+                view: a “Getting Started” card for brand‑new users that they
+                don't have to search for. An updates{" "}
+                <span className="font-semibold">Updates</span> panel
+                highlighting recent Warp changes and a horizontally‑scrollable{" "}
+                <span className="font-semibold">Recent Activity</span> carousel
+                letting quickly jump into their previous work. The existing
+                Warp Drive stays on the left, while the new Warp Home sidebar
+                navigation can be toggled as well. The two swap with each other
+                when clicked.
+              </p>
+
+              <p>
+                <span className="font-semibold">Teams view.</span> Inspired by
+                Figma’s layout, the Teams page now opens with top‑level team
+                tiles that expose member count and recent activity. Selecting a
+                team slides Warp Drive into view and surfaces{" "}
+                <span className="font-semibold">
+                  templates, live activity, and all team files
+                </span>{" "}
+                in a single feedback
+              </p>
+
+              <p>
+                <span className="font-semibold">Billing.</span> Critique called
+                our old billing mock salesy and in your face. We stripped the
+                upsell banners introduced a calm layout: current plan, paid
+                seats vs. total team size, clear invoices, and simple{" "}
+                <span className="font-semibold">Manage </span> button.
+              </p>
+
+              <p>
+                <span className="font-semibold">Metrics.</span> Because admins
+                measure ROI, we replaced generic charts with{" "}
+                <span className="font-semibold">
+                  AI usage rate, estimated time saved, team speed , and commmand
+                  usage
+                </span>
+                . A “Get More Metrics” button lets orgs track what matters to
+                them. The metrics are shown in a clean and organized matter.
+              </p>
+
+              <p>
+                <span className="font-semibold">
+                  Key feedback incorporated:
+                </span>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>
+                    Moved onboarding tips in clear view instead of hiding them
+                    in a tab.
+                  </li>
+                  <li>
+                    Kept Warp Drive as a permanent feautre; Warp Home sidebar is
+                    available and swaps with Warp Drive
+                  </li>
+                  <li>Grouped Teams → Members → Files like Figma</li>
+                  <li>
+                    Dialed back Billing page marketing and separated seat counts
+                    from invoices. Made the billing focused on current plans and
+                    past invoices
+                  </li>
+                  <li>
+                    Refocused Metrics on tangible developer value, not internal
+                    Warp KPIs.
+                  </li>
+                </ul>
+              </p>
+
+              <p>
+                Our hi‑fi prototype aims to{" "}
+                <span className="font-semibold">
+                  addresses the critical pain points surfaced in critique and
+                  demonstrates a cohesive, production‑ready workflow
+                </span>
+                .
+              </p>
               <p>
                 You can view the final wireframes and our walkthrough in the
-                Loom video below.
+                Loom video below, as well as through an interactive Figma file.
               </p>
               <div className="w-full h-[550px] mt-10">
                 <iframe
@@ -624,14 +707,13 @@ const Template = () => {
 
               <div className="w-full h-[550px] mt-10">
                 <iframe
-                    src="https://embed.figma.com/proto/Z858FJzyUojk4x38pRcJ9n/Warp-AI-Home--Hi-Fi-Prototype?page-id=0%3A1&node-id=55-3485&starting-point-node-id=55%3A3485&embed-host=share" 
-                    frameBorder="0"
-                    allowFullScreen
-                    className="w-full h-full rounded-md shadow-lg"
-                    title="Loom walkthrough"
-                  ></iframe>
+                  src="https://embed.figma.com/proto/Z858FJzyUojk4x38pRcJ9n/Warp-AI-Home--Hi-Fi-Prototype?page-id=0%3A1&node-id=55-3485&starting-point-node-id=55%3A3485&embed-host=share"
+                  frameBorder="0"
+                  allowFullScreen
+                  className="w-full h-full rounded-md shadow-lg"
+                  title="Loom walkthrough"
+                ></iframe>
               </div>
-
             </section>
 
             {/* Final Critique */}
@@ -641,14 +723,15 @@ const Template = () => {
               </h1>
 
               <p>
-                After submitting our Hi-Fi prototype, we had the privelage to meet with
-                two developers on the Warp team. This in-person critique
-                was a chace for us to ask questions about our design, recieve 
-                meaningful and actionable feedback, and begin thinking how 
-                we would continue to iterate on our prototype if this project
-                was to continue. The main pieces of feedback are summarized below:
+                After submitting our Hi-Fi prototype, we had the privelage to
+                meet with two developers on the Warp team. This in-person
+                critique was a chace for us to ask questions about our design,
+                recieve meaningful and actionable feedback, and begin thinking
+                how we would continue to iterate on our prototype if this
+                project was to continue. The main pieces of feedback are
+                summarized below:
               </p>
-    
+
               {/* ===== HOME ===== */}
               <div className="space-y-4">
                 <h2 className="text-xl font-bold">Home</h2>
@@ -657,16 +740,20 @@ const Template = () => {
                     <p className="font-semibold mb-1">Feedback</p>
                     <ul className="list-disc list-inside">
                       <li>
-                        Design pattern with two toggling side panels (Settings / Drive) is unconventional and potentially confusing.
+                        Design pattern with two toggling side panels (Settings /
+                        Drive) is unconventional and potentially confusing.
                       </li>
                       <li>
-                        Putting all features on a single page might lead to clutter and zero states for new users.
+                        Putting all features on a single page might lead to
+                        clutter and zero states for new users.
                       </li>
                       <li>
-                        A home page should not be the first thing shown — developers expect to land in a terminal.
+                        A home page should not be the first thing shown —
+                        developers expect to land in a terminal.
                       </li>
                       <li>
-                        Home content could instead live in a separate tab, like WarpDrive, and not be shown until later.
+                        Home content could instead live in a separate tab, like
+                        WarpDrive, and not be shown until later.
                       </li>
                     </ul>
                   </div>
@@ -674,16 +761,21 @@ const Template = () => {
                     →
                   </div>
                   <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">Our (Theoretical) Response</p>
+                    <p className="font-semibold mb-1">
+                      Our (Theoretical) Response
+                    </p>
                     <ul className="list-disc list-inside">
                       <li>
-                        We'll explore making the home view an optional, separate tab that's accessible but not intrusive.
+                        We'll explore making the home view an optional, separate
+                        tab that's accessible but not intrusive.
                       </li>
                       <li>
-                        Settings and Drive access will be streamlined into a unified side menu with simpler navigation.
+                        Settings and Drive access will be streamlined into a
+                        unified side menu with simpler navigation.
                       </li>
                       <li>
-                        Initial states will be designed with progressive disclosure to minimize friction for new users.
+                        Initial states will be designed with progressive
+                        disclosure to minimize friction for new users.
                       </li>
                     </ul>
                   </div>
@@ -698,13 +790,16 @@ const Template = () => {
                     <p className="font-semibold mb-1">Feedback</p>
                     <ul className="list-disc list-inside">
                       <li>
-                        Members should be visible in the preview but managed on a separate members page.
+                        Members should be visible in the preview but managed on
+                        a separate members page.
                       </li>
                       <li>
-                        Roles, permissions, and add/remove functions should be clearly presented in a dedicated tab.
+                        Roles, permissions, and add/remove functions should be
+                        clearly presented in a dedicated tab.
                       </li>
                       <li>
-                        Consider aligning with layout patterns from other tabs like Billing.
+                        Consider aligning with layout patterns from other tabs
+                        like Billing.
                       </li>
                     </ul>
                   </div>
@@ -712,13 +807,17 @@ const Template = () => {
                     →
                   </div>
                   <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">Our (Theoretical) Response</p>
+                    <p className="font-semibold mb-1">
+                      Our (Theoretical) Response
+                    </p>
                     <ul className="list-disc list-inside">
                       <li>
-                        We'll move management features to a focused Members tab with clear editing capabilities.
+                        We'll move management features to a focused Members tab
+                        with clear editing capabilities.
                       </li>
                       <li>
-                        Preview components will stay lightweight and limited to user presence.
+                        Preview components will stay lightweight and limited to
+                        user presence.
                       </li>
                     </ul>
                   </div>
@@ -733,13 +832,16 @@ const Template = () => {
                     <p className="font-semibold mb-1">Feedback</p>
                     <ul className="list-disc list-inside">
                       <li>
-                        Current billing hierarchy is unclear — paid seats and team size should be separated from invoice details.
+                        Current billing hierarchy is unclear — paid seats and
+                        team size should be separated from invoice details.
                       </li>
                       <li>
-                        Avoid blending plan management with actual cost reporting.
+                        Avoid blending plan management with actual cost
+                        reporting.
                       </li>
                       <li>
-                        Remove unnecessary marketing content from this page — users already know their plan.
+                        Remove unnecessary marketing content from this page —
+                        users already know their plan.
                       </li>
                     </ul>
                   </div>
@@ -747,13 +849,18 @@ const Template = () => {
                     →
                   </div>
                   <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">Our (Theoretical) Response</p>
+                    <p className="font-semibold mb-1">
+                      Our (Theoretical) Response
+                    </p>
                     <ul className="list-disc list-inside">
                       <li>
-                        We'll restructure the billing page to separate plan settings, seat counts, and invoices into distinct sections.
+                        We'll restructure the billing page to separate plan
+                        settings, seat counts, and invoices into distinct
+                        sections.
                       </li>
                       <li>
-                        Plan summaries will be moved to a lightweight “Manage Plan” view.
+                        Plan summaries will be moved to a lightweight “Manage
+                        Plan” view.
                       </li>
                     </ul>
                   </div>
@@ -768,10 +875,12 @@ const Template = () => {
                     <p className="font-semibold mb-1">Feedback</p>
                     <ul className="list-disc list-inside">
                       <li>
-                        Distinguish between individual and team-level metrics — avoid combining them in one view.
+                        Distinguish between individual and team-level metrics —
+                        avoid combining them in one view.
                       </li>
                       <li>
-                        Highlight developer-relevant metrics like build times and error rates over AI prompt usage types.
+                        Highlight developer-relevant metrics like build times
+                        and error rates over AI prompt usage types.
                       </li>
                     </ul>
                   </div>
@@ -779,13 +888,17 @@ const Template = () => {
                     →
                   </div>
                   <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">Our (Theoretical) Response</p>
+                    <p className="font-semibold mb-1">
+                      Our (Theoretical) Response
+                    </p>
                     <ul className="list-disc list-inside">
                       <li>
-                        We’ll separate individual and team stats into clearly labeled sections.
+                        We’ll separate individual and team stats into clearly
+                        labeled sections.
                       </li>
                       <li>
-                        We'll prioritize actionable developer metrics like error rate and build time over internal AI usage stats.
+                        We'll prioritize actionable developer metrics like error
+                        rate and build time over internal AI usage stats.
                       </li>
                     </ul>
                   </div>
@@ -794,16 +907,21 @@ const Template = () => {
 
               {/* ===== ONBOARDING & CUSTOMIZATION ===== */}
               <div className="space-y-4">
-                <h2 className="text-xl font-bold">Onboarding & Customization</h2>
+                <h2 className="text-xl font-bold">
+                  Onboarding & Customization
+                </h2>
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="md:w-1/2">
                     <p className="font-semibold mb-1">Feedback</p>
                     <ul className="list-disc list-inside">
                       <li>
-                        Onboarding should happen contextually — introduce features like prompt suggestions when users encounter bugs, not before.
+                        Onboarding should happen contextually — introduce
+                        features like prompt suggestions when users encounter
+                        bugs, not before.
                       </li>
                       <li>
-                        Users liked the idea of customization — e.g., a widget-style editor for Home could be powerful.
+                        Users liked the idea of customization — e.g., a
+                        widget-style editor for Home could be powerful.
                       </li>
                     </ul>
                   </div>
@@ -811,13 +929,17 @@ const Template = () => {
                     →
                   </div>
                   <div className="md:w-1/2">
-                    <p className="font-semibold mb-1">Our (Theoretical) Response</p>
+                    <p className="font-semibold mb-1">
+                      Our (Theoretical) Response
+                    </p>
                     <ul className="list-disc list-inside">
                       <li>
-                        We’ll adopt a “learn by doing” model by surfacing tools only when users need them.
+                        We’ll adopt a “learn by doing” model by surfacing tools
+                        only when users need them.
                       </li>
                       <li>
-                        We’re exploring a customizable home layout that gives power users greater control over their interface.
+                        We’re exploring a customizable home layout that gives
+                        power users greater control over their interface.
                       </li>
                     </ul>
                   </div>
@@ -828,10 +950,15 @@ const Template = () => {
               <div className="text-left space-y-10">
                 <h2 className="text-xl font-bold">Final Thoughts</h2>
                 <p>
-                  This session provided clarity on how experienced developers expect structure, focus, and subtle onboarding in tools like Warp. We’re excited to rethink some of our layout choices and consider more contextual design strategies.
+                  This session provided clarity on how experienced developers
+                  expect structure, focus, and subtle onboarding in tools like
+                  Warp. We’re excited to rethink some of our layout choices and
+                  consider more contextual design strategies.
                 </p>
                 <p className="italic">
-                  Open question: How can we balance first-time user guidance with the expectations of a power user who just wants to get coding?
+                  Open question: How can we balance first-time user guidance
+                  with the expectations of a power user who just wants to get
+                  coding?
                 </p>
               </div>
             </section>
