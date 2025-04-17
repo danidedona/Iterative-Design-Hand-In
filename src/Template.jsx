@@ -614,8 +614,8 @@ const Template = () => {
 
               <div className="w-full h-[550px] mt-10">
                 <iframe
-                  src="https://www.loom.com/share/27d983c61b4945af92e68bf9d468e08b?sid=039e7eaf-4791-43b3-ac13-608fddae4ef5"
-                  frameBorder="0"
+                  src="https://www.loom.com/share/27d983c61b4945af92e68bf9d468e08b?sid=fd042957-2c48-4de8-a491-739387c51f4b"
+                  https:frameBorder="0"
                   allowFullScreen
                   className="w-full h-full rounded-md shadow-lg"
                   title="Loom Hi-Fi walkthrough"
