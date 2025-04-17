@@ -383,10 +383,217 @@ const Template = () => {
             </section>
 
             {/* Wireframe Critique */}
-            <section id="wireframe critique" className="text-left">
+            <section id="wireframe critique" className="text-left space-y-10">
               <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
                 Wireframe Critique
               </h1>
+
+              <p>
+                After submitting our wireframe via Loom, we received detailed
+                feedback from Warp stakeholders and critiqued our work in person
+                with Vanessa Cho. Below is a breakdown of the feedback we
+                received on each section of our design, and the changes we made
+                (or chose not to make) in response.
+              </p>
+
+              {/* ===== HOME ===== */}
+              <div className="space-y-4">
+                <h2 className="text-xl font-bold">Home</h2>
+                <div className="flex flex-col md:flex-row gap-6">
+                  <div className="md:w-1/2">
+                    <p className="font-semibold mb-1">Feedback</p>
+                    <ul className="list-disc list-inside">
+                      <li>
+                        Is this dashboard intended to{" "}
+                        <span className="italic">replace</span> WarpDrive?
+                        There's concern it overlaps too much with the Documents
+                        section.
+                      </li>
+                      <li>
+                        The current dropdown may be cramming too many features
+                        into one place.
+                      </li>
+                      <li>
+                        Why is “Ask Warp” separated from the terminal? It
+                        currently serves as a dual-mode input.
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="hidden md:flex items-center justify-center text-3xl text-gray-400">
+                    →
+                  </div>
+                  <div className="md:w-1/2">
+                    <p className="font-semibold mb-1">Our Response</p>
+                    <ul className="list-disc list-inside">
+                      <li>
+                        We reframed the dashboard as a complementary overview
+                        that enhances WarpDrive, not replaces it.
+                      </li>
+                      <li>
+                        We surfaced persona-based functionality directly on the
+                        dashboard.
+                      </li>
+                      <li>
+                        “Ask Warp” will be integrated with the terminal input to
+                        align with current user expectations.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* ===== TEAM ===== */}
+              <div className="space-y-4">
+                <h2 className="text-xl font-bold">Team</h2>
+                <div className="flex flex-col md:flex-row gap-6">
+                  <div className="md:w-1/2">
+                    <p className="font-semibold mb-1">Feedback</p>
+                    <ul className="list-disc list-inside">
+                      <li>
+                        The IA could use more thoughtful grouping—look at
+                        Figma's org/project hierarchy.
+                      </li>
+                      <li>
+                        Make assumptions clear (e.g., users belong to teams, not
+                        just projects).
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="hidden md:flex items-center justify-center text-3xl text-gray-400">
+                    →
+                  </div>
+                  <div className="md:w-1/2">
+                    <p className="font-semibold mb-1">Our Response</p>
+                    <ul className="list-disc list-inside">
+                      <li>
+                        We adopted a clear structure where users belong to
+                        teams, and teams manage multiple workspaces.
+                      </li>
+                      <li>
+                        We simplified navigation and made team-level views more
+                        consistent.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* ===== METRICS ===== */}
+              <div className="space-y-4">
+                <h2 className="text-xl font-bold">Metrics</h2>
+                <div className="flex flex-col md:flex-row gap-6">
+                  <div className="md:w-1/2">
+                    <p className="font-semibold mb-1">Feedback</p>
+                    <ul className="list-disc list-inside">
+                      <li>
+                        Tailor metrics to specific user types — e.g., admins
+                        care about performance stats.
+                      </li>
+                      <li>
+                        Show value — like how much time is saved using agentic
+                        suggestions.
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="hidden md:flex items-center justify-center text-3xl text-gray-400">
+                    →
+                  </div>
+                  <div className="md:w-1/2">
+                    <p className="font-semibold mb-1">Our Response</p>
+                    <ul className="list-disc list-inside">
+                      <li>
+                        We proposed usage-based metrics: frequency of AI
+                        suggestions, time saved, etc.
+                      </li>
+                      <li>
+                        We tailored the display based on user role (e.g., admin
+                        vs. team member).
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* ===== BILLING ===== */}
+              <div className="space-y-4">
+                <h2 className="text-xl font-bold">Billing</h2>
+                <div className="flex flex-col md:flex-row gap-6">
+                  <div className="md:w-1/2">
+                    <p className="font-semibold mb-1">Feedback</p>
+                    <ul className="list-disc list-inside">
+                      <li>
+                        The pricing tiers are too prominent — not reflective of
+                        what users actually come to view.
+                      </li>
+                      <li>
+                        Look at Figma's billing portal for a more intuitive
+                        model.
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="hidden md:flex items-center justify-center text-3xl text-gray-400">
+                    →
+                  </div>
+                  <div className="md:w-1/2">
+                    <p className="font-semibold mb-1">Our Response</p>
+                    <ul className="list-disc list-inside">
+                      <li>
+                        We demoted pricing tiers to a secondary page and
+                        prioritized recent invoices and usage breakdowns.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* ===== HOW TO USE ===== */}
+              <div className="space-y-4">
+                <h2 className="text-xl font-bold">How to Use</h2>
+                <div className="flex flex-col md:flex-row gap-6">
+                  <div className="md:w-1/2">
+                    <p className="font-semibold mb-1">Feedback</p>
+                    <ul className="list-disc list-inside">
+                      <li>
+                        Does this belong buried under a tab on the homepage?
+                      </li>
+                      <li>
+                        Consider surfacing onboarding at a more relevant point
+                        in the user journey.
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="hidden md:flex items-center justify-center text-3xl text-gray-400">
+                    →
+                  </div>
+                  <div className="md:w-1/2">
+                    <p className="font-semibold mb-1">Our Response</p>
+                    <ul className="list-disc list-inside">
+                      <li>
+                        We're redesigning onboarding to live at the top of the
+                        homepage, including suggested code blocks and a CTA
+                        linking to more detailed resources.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* ===== FINAL THOUGHTS ===== */}
+              <div className="space-y-4">
+                <h2 className="text-xl font-bold">Final Thoughts</h2>
+                <p>
+                  Our in-person critique with Vanessa reinforced many of the
+                  same points, helping us prioritize which adjustments to make
+                  first. Across the board, we focused on simplifying navigation,
+                  clarifying hierarchy, and surfacing key functionality in the
+                  most context-appropriate places.
+                </p>
+                <p className="italic">
+                  Open question: How do we create a landing experience that's
+                  helpful to new users, but doesn't overwhelm them with
+                  complexity?
+                </p>
+              </div>
             </section>
 
             {/* Hi-Fi Prototype */}
