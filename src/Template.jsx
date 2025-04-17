@@ -52,10 +52,10 @@ const sketchData = {
 };
 
 const sketchNotes = {
-  Dani: ["Home Page w/ File Information", "My Account Page", "Metrics Page"],
-  Mia: ["Home Page w/ File Information", "My Account Page", "Metrics Page"],
+  Dani: ["Home Page Option 1", "My Account Page", "Home Page Option 2"],
+  Mia: ["Home Page Option 1", "Team Page", "Home page Option 2"],
   Jake: ["Home Page w/ File Information", "My Account Page", "Metrics Page"],
-  Efram: ["Home Page w/ File Information", "My Account Page", "Metrics Page"],
+  Efram: ["Home Page", "Team Page", "Learn Page"],
 }
 
 const Template = () => {
