@@ -116,7 +116,7 @@ const Template = () => {
         <div className="flex flex-col justify-center items-start text-black">
           <div className="text-7xl font-bold">
             <h1 className="text-2xl font-bold text-[var(--color-dark)]">
-              CSCI1300: Title
+              CSCI1300: Iterative Design & Evaluation
             </h1>
             <p className="mt-16 mb-4 text-[var(--color-dark)]">Title</p>
             <AnimatePresence mode="wait">
@@ -154,7 +154,18 @@ const Template = () => {
           <h2 className="text-3xl font-bold">Title</h2>
           <p className="mt-8 mb-4">Why its important</p>
 
-          <p className="my-4">In this project, ...</p>
+          <p className="my-4">
+            In this Iterative Design & Evaluation project, our team partnered
+            with Warp to address a key usability gap: the lack of a centralized
+            dashboard where users can manage their account, team, sessions, and
+            explore AI features. As Warp expands its collaborative and
+            cloud-based tools, this feature would serve as the foundation for a
+            more guided, discoverable, and intelligent user experience. 
+            
+            In working directly with a startup, this project challenged us to think
+            critically about users, iterate based on feedback, and balance
+            design creativity with business needs.
+          </p>
         </div>
 
         {/* Right Side (1/4) */}
@@ -165,7 +176,7 @@ const Template = () => {
             Accessible UI Components
           </p>
           <h3 className="text-2xl font-bold mt-4">Project Duration</h3>
-          <p>2 Weeks</p>
+          <p>4 Weeks</p>
           <h3 className="text-2xl font-bold mt-4">Research Refences</h3>
           <ul className="list-disc list-inside">
             <li>
@@ -230,21 +241,21 @@ const Template = () => {
             {/* Section 1 */}
             <section id="sec1" className="text-left">
               <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
-                First Section
+                Sketching and Wireframing
               </h1>
             </section>
 
             {/* Section 2 */}
             <section id="sec2" className="text-left">
               <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
-                Second Section
+                Hi-Fi Prototype
               </h1>
             </section>
 
             {/* Section 3 */}
             <section id="sec3" className="text-left">
               <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
-                Third Section
+                Founder Feedback
               </h1>
             </section>
           </div>
