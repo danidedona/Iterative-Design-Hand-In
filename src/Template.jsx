@@ -597,14 +597,28 @@ const Template = () => {
             </section>
 
             {/* Hi-Fi Prototype */}
-            <section id="hifi prototype" className="text-left">
+            <section id="hifi prototype" className="text-left space-y-8">
               <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
                 Hi-Fi Prototype
               </h1>
+              <p>...</p>
+              <p>
+                You can view the final wireframes and our walkthrough in the
+                Loom video below.
+              </p>
+              <div className="w-full h-[550px] mt-10">
+                <iframe
+                  src="https://www.loom.com/embed/27d983c61b4945af92e68bf9d468e08b"
+                  frameBorder="0"
+                  allowFullScreen
+                  className="w-full h-full rounded-md shadow-lg"
+                  title="Loom walkthrough"
+                ></iframe>
+              </div>
             </section>
 
             {/* Final Critique */}
-            <section id="final critique" className="text-left">
+            <section id="final critique" className="text-left space-y-8">
               <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
                 Final Critique
               </h1>
