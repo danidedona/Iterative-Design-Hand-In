@@ -621,6 +621,17 @@ const Template = () => {
                   title="Loom walkthrough"
                 ></iframe>
               </div>
+
+              <div className="w-full h-[550px] mt-10">
+                <iframe
+                    src="https://embed.figma.com/proto/Z858FJzyUojk4x38pRcJ9n/Warp-AI-Home--Hi-Fi-Prototype?page-id=0%3A1&node-id=55-3485&starting-point-node-id=55%3A3485&embed-host=share" 
+                    frameBorder="0"
+                    allowFullScreen
+                    className="w-full h-full rounded-md shadow-lg"
+                    title="Loom walkthrough"
+                  ></iframe>
+              </div>
+
             </section>
 
             {/* Final Critique */}
