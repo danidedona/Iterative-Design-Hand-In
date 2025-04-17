@@ -122,7 +122,7 @@ const Template = () => {
             <h1 className="text-2xl font-bold text-[var(--color-dark)]">
               CSCI1300: Iterative Design & Evaluation
             </h1>
-            <p className="mt-16 mb-4 text-[var(--color-dark)]">Title</p>
+            <p className="mt-16 mb-4 text-[var(--color-dark)]">Warp AI Home</p>
             <AnimatePresence mode="wait">
               <motion.div
                 key={topics[currentTopic]}
