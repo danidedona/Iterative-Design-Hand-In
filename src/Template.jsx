@@ -180,17 +180,22 @@ const Template = () => {
         <div className="w-3/4 text-left">
           <h2 className="text-3xl font-bold">Project description</h2>
           <p className="my-4">
-            In this project, our team partnered with Warp to address a key
+            In this project, our team partnered with Warp, a next-gen terminal
+            reimagined with AI and collaboration at its core. We aim to address a key
             usability gap: the lack of a centralized dashboard where users can
             manage their account, team, sessions, and explore AI features. As
-            Warp expands its collaborative and cloud-based tools, this feature
-            would serve as the foundation for a more guided, discoverable, and
-            intelligent user experience.
+            Warp expands its collaborative and cloud-based tools, this "Home"
+            experience would serve as the foundation for a more guided,
+            discoverable, and intelligent user experience.
           </p>
           <p className="my-4">
             In working directly with a startup, this project challenged us to
             think critically about users, iterate based on feedback, and balance
-            design creativity with business needs.
+            design creativity with business needs. We identified key needs,
+            sketched concepts, and built wireframes and prototypes. Through
+            multiple rounds of feedback and usability testing, we refined the
+            layout and content to better support essential features of the
+            "Home" experience.
           </p>
         </div>
 
@@ -203,7 +208,7 @@ const Template = () => {
           </p>
           <h3 className="text-2xl font-bold mt-4">Project Duration</h3>
           <p>4 Weeks</p>
-          <h3 className="text-2xl font-bold mt-4">Team Member</h3>
+          <h3 className="text-2xl font-bold mt-4">Team Members</h3>
           <ul className="list-disc list-inside">
             <li>
               <a
