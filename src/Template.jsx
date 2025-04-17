@@ -51,6 +51,13 @@ const sketchData = {
   Efram: [1, 2, 3],
 };
 
+const sketchNotes = {
+  Dani: ["Home Page w/ File Information", "My Account Page", "Metrics Page"],
+  Mia: ["Home Page w/ File Information", "My Account Page", "Metrics Page"],
+  Jake: ["Home Page w/ File Information", "My Account Page", "Metrics Page"],
+  Efram: ["Home Page w/ File Information", "My Account Page", "Metrics Page"],
+}
+
 const Template = () => {
   //////////////////////////////////////////////////////////////////////////////
   // Image Full Screen
@@ -347,7 +354,7 @@ const Template = () => {
                             className="h-[180px] w-auto rounded-md shadow-md cursor-pointer transition transform duration-300 hover:scale-105 hover:shadow-lg"
                           />
                           <p className="mt-2 text-sm text-gray-600">
-                            Sketch {i}
+                            {sketchNotes[name][i - 1]}
                           </p>
                         </div>
                       );
