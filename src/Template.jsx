@@ -181,10 +181,10 @@ const Template = () => {
           <h2 className="text-3xl font-bold">Project description</h2>
           <p className="my-4">
             In this project, our team partnered with Warp, a next-gen terminal
-            reimagined with AI and collaboration at its core. We aim to address a key
-            usability gap: the lack of a centralized dashboard where users can
-            manage their account, team, sessions, and explore AI features. As
-            Warp expands its collaborative and cloud-based tools, this "Home"
+            reimagined with AI and collaboration at its core. We aim to address
+            a key usability gap: the lack of a centralized dashboard where users
+            can manage their account, team, sessions, and explore AI features.
+            As Warp expands its collaborative and cloud-based tools, this "Home"
             experience would serve as the foundation for a more guided,
             discoverable, and intelligent user experience.
           </p>
@@ -213,7 +213,7 @@ const Template = () => {
             <li>
               <a
                 // potentially add our linkedin / portfolio links?
-                href="https://mail.google.com"
+                href="https://www.linkedin.com/in/daniela-dedona/"
                 target="_blank"
                 rel="noopener noreferrer"
                 // className="text-blue-500"
@@ -223,7 +223,7 @@ const Template = () => {
             </li>
             <li>
               <a
-                href="https://docs.google.com/forms"
+                href="https://www.linkedin.com/in/mia-nguyen-brownu/"
                 target="_blank"
                 rel="noopener noreferrer"
                 // className="text-blue-500"
@@ -233,7 +233,7 @@ const Template = () => {
             </li>
             <li>
               <a
-                href="https://www.notion.com"
+                href="https://www.linkedin.com/in/jacob-stifelman/"
                 target="_blank"
                 rel="noopener noreferrer"
                 // className="text-blue-500"
@@ -243,7 +243,7 @@ const Template = () => {
             </li>
             <li>
               <a
-                href="https://www.notion.com"
+                href="https://www.linkedin.com/in/efram-geller-ab5638246/"
                 target="_blank"
                 rel="noopener noreferrer"
                 // className="text-blue-500"
