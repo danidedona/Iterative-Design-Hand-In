@@ -16,17 +16,40 @@ const colors = {
 };
 
 const sections = [
-  { id: "sec1", label: "Sketching and Wireframing" },
-  { id: "sec2", label: "Hi-Fi Prototype" },
-  { id: "sec3", label: "Founder Feedback" },
+  { id: "sketching and wireframing", label: "Sketching and Wireframing" },
+  { id: "wireframe critique", label: "Wireframe Critique" },
+  { id: "hifi prototype", label: "Hi-Fi Prototype" },
+  { id: "final critique", label: "Final Critique" },
 ];
 
 // Topics are used for fluid word list animation
 const topics = [
-  "Sketching and Wireframing",
-  "Hi-Fi Prototype",
-  "Founder Feedback",
+  "AI-Powered",
+  "Clean Interface",
+  "Developer-First",
+  "Customizable",
+  "Fast",
+  "Central Hub",
+  "Terminal Reinvented",
+  "Command Center",
+  "Smart Suggestions",
+  "Intuitive",
+  "Streamlined",
+  "Efficient Workflow",
+  "Context-Aware",
+  "User-Guided",
+  "Modern CLI",
+  "Dashboard-Driven",
+  "Cloud-Native",
+  "Productivity-Boosting",
 ];
+
+const sketchData = {
+  Dani: [1, 2, 3],
+  Mia: [1, 2, 3],
+  Jake: [1, 2, 3],
+  Efram: [1, 2, 3],
+};
 
 const Template = () => {
   //////////////////////////////////////////////////////////////////////////////
@@ -101,7 +124,7 @@ const Template = () => {
         >
           <div className="relative max-w-5xl w-full max-h-[90vh] flex justify-center items-center">
             <button
-              className="absolute top-4 right-4 text-white text-3xl font-bold"
+              className="absolute top-4 right-4 text-black text-3xl font-bold"
               onClick={() => setSelectedImage(null)}
             >
               &times;
@@ -252,24 +275,131 @@ const Template = () => {
 
           {/* Main Content */}
           <div className="w-3/4 space-y-16 pl-8">
-            {/* Section 1 */}
-            <section id="sec1" className="text-left">
+            {/* Sketching and Wireframing */}
+            <section
+              id="sketching and wireframing"
+              className="text-left space-y-8"
+            >
               <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
                 Sketching and Wireframing
               </h1>
+
+              <p>
+                We began our iterative design process by brainstorming and
+                visualizing possible directions for a{" "}
+                <span className="font-semibold">
+                  centralized homepage interface
+                </span>{" "}
+                for Warp — a developer-first AI terminal. This dashboard would
+                serve as a hub to manage teams, sessions, recent activity, and
+                AI-powered suggestions, helping users navigate Warp's ecosystem
+                more efficiently.
+              </p>
+
+              <p>
+                Our goal was to create an interface for{" "}
+                <span className="font-semibold">desktop users</span>,
+                specifically engineers who use Warp in collaborative
+                environments. These users often struggle to find relevant files,
+                understand team activity, or discover Warp's advanced AI tools.
+                A dashboard could surface these features proactively, reducing
+                friction and cognitive overhead.
+              </p>
+
+              <p>
+                As a group, we sketched{" "}
+                <span className="font-semibold">
+                  four distinct layout ideas
+                </span>
+                , each exploring different ways to surface core functionalities
+                such as team management, AI suggestions, account settings, and
+                product metrics. Each member contributed three sketches — a home
+                screen and two supporting screens — for a total of 16 unique
+                sketches.
+              </p>
+
+              {/* Group Sketch Gallery */}
+              {Object.entries(sketchData).map(([name, images]) => (
+                <div
+                  key={name}
+                  className="flex items-start space-x-4 mb-10 min-h-[220px] md:min-h-[250px]"
+                >
+                  {/* Name Column */}
+                  <div className="w-24 shrink-0 font-semibold text-lg mt-2">
+                    {name}
+                  </div>
+
+                  {/* Horizontal Scrollable Image Carousel */}
+                  <div className="overflow-x-auto flex space-x-4 p-4">
+                    {images.map((i) => {
+                      const src = `/sketches/${name.toLowerCase()}${i}.png`;
+                      return (
+                        <div key={i} className="flex-shrink-0 text-center">
+                          <img
+                            src={src}
+                            alt={`${name}'s sketch ${i}`}
+                            onClick={() => setSelectedImage(src)}
+                            className="h-[180px] w-auto rounded-md shadow-md cursor-pointer transition transform duration-300 hover:scale-105 hover:shadow-lg"
+                          />
+                          <p className="mt-2 text-sm text-gray-600">
+                            Sketch {i}
+                          </p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+
+              <p>
+                After reviewing all sketches, we had a team discussion around
+                what elements worked well and which approaches best aligned with
+                Warp's goals. From that conversation, we created a consolidated
+                wireframe using Balsamiq, combining the strongest parts of our
+                sketches.
+              </p>
+
+              <p>
+                Key decisions included surfacing team management and metrics in
+                a left-side tab panel, while allowing quick access to AI
+                suggestions and recent activity. This layout prioritized
+                visibility without cluttering the interface.
+              </p>
+
+              <p>
+                You can view the final wireframes and our walkthrough in the
+                Loom video below.
+              </p>
+
+              <div className="w-full h-[550px] mt-10">
+                <iframe
+                  src="https://www.loom.com/embed/b00de5a5c25d4ad4b480fc7bdd893360?sid=79e680d3-3914-423b-9427-6d1869a01a40"
+                  frameBorder="0"
+                  allowFullScreen
+                  className="w-full h-full rounded-md shadow-lg"
+                  title="Loom walkthrough"
+                ></iframe>
+              </div>
             </section>
 
-            {/* Section 2 */}
-            <section id="sec2" className="text-left">
+            {/* Wireframe Critique */}
+            <section id="wireframe critique" className="text-left">
+              <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
+                Wireframe Critique
+              </h1>
+            </section>
+
+            {/* Hi-Fi Prototype */}
+            <section id="hifi prototype" className="text-left">
               <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
                 Hi-Fi Prototype
               </h1>
             </section>
 
-            {/* Section 3 */}
-            <section id="sec3" className="text-left">
+            {/* Final Critique */}
+            <section id="final critique" className="text-left">
               <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
-                Founder Feedback
+                Final Critique
               </h1>
             </section>
           </div>
