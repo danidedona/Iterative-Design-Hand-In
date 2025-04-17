@@ -606,6 +606,21 @@ const Template = () => {
               <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
                 Hi-Fi Prototype
               </h1>
+
+              <p>
+                You can view the final hi-fi protoytpe and our walkthrough in
+                the Loom video below.
+              </p>
+
+              <div className="w-full h-[550px] mt-10">
+                <iframe
+                  src="https://www.loom.com/share/27d983c61b4945af92e68bf9d468e08b?sid=039e7eaf-4791-43b3-ac13-608fddae4ef5"
+                  frameBorder="0"
+                  allowFullScreen
+                  className="w-full h-full rounded-md shadow-lg"
+                  title="Loom Hi-Fi walkthrough"
+                ></iframe>
+              </div>
             </section>
 
             {/* Final Critique */}
