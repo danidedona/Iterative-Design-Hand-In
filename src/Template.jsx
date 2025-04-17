@@ -20,6 +20,7 @@ const sections = [
   { id: "wireframe critique", label: "Wireframe Critique" },
   { id: "hifi prototype", label: "Hi-Fi Prototype" },
   { id: "final critique", label: "Final Critique" },
+  { id: "reflection", label: "Reflection" },
 ];
 
 // Topics are used for fluid word list animation
@@ -52,11 +53,15 @@ const sketchData = {
 };
 
 const sketchNotes = {
-  Dani: ["Home Page w/ File Information", "My Account Page", "Metrics Page"],
+  Dani: [
+    "Home Page w/ Modular Components",
+    "Team Page",
+    "Home Page w/ a Focus on Recent Activity",
+  ],
   Mia: ["Home Page w/ File Information", "My Account Page", "Metrics Page"],
   Jake: ["Home Page w/ File Information", "My Account Page", "Metrics Page"],
   Efram: ["Home Page w/ File Information", "My Account Page", "Metrics Page"],
-}
+};
 
 const Template = () => {
   //////////////////////////////////////////////////////////////////////////////
@@ -636,7 +641,7 @@ const Template = () => {
 
               <p>
                 <span className="font-semibold">Teams view.</span> Inspired by
-                Figma’s layout, the Teams page now opens with top‑level team
+                Figma's layout, the Teams page now opens with top‑level team
                 tiles that expose member count and recent activity. Selecting a
                 team slides Warp Drive into view and surfaces{" "}
                 <span className="font-semibold">
@@ -900,7 +905,7 @@ const Template = () => {
                     </p>
                     <ul className="list-disc list-inside">
                       <li>
-                        We’ll separate individual and team stats into clearly
+                        We'll separate individual and team stats into clearly
                         labeled sections.
                       </li>
                       <li>
@@ -941,11 +946,11 @@ const Template = () => {
                     </p>
                     <ul className="list-disc list-inside">
                       <li>
-                        We’ll adopt a “learn by doing” model by surfacing tools
+                        We'll adopt a “learn by doing” model by surfacing tools
                         only when users need them.
                       </li>
                       <li>
-                        We’re exploring a customizable home layout that gives
+                        We're exploring a customizable home layout that gives
                         power users greater control over their interface.
                       </li>
                     </ul>
@@ -959,13 +964,66 @@ const Template = () => {
                 <p>
                   This session provided clarity on how experienced developers
                   expect structure, focus, and subtle onboarding in tools like
-                  Warp. We’re excited to rethink some of our layout choices and
+                  Warp. We're excited to rethink some of our layout choices and
                   consider more contextual design strategies.
                 </p>
                 <p className="italic">
                   Open question: How can we balance first-time user guidance
                   with the expectations of a power user who just wants to get
                   coding?
+                </p>
+              </div>
+            </section>
+
+            {/* Reflection */}
+            <section id="reflection" className="text-left space-y-10">
+              <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
+                Reflection
+              </h1>
+
+              {/* Intro */}
+              <div className="space-y-4">
+                <h2 className="text-xl font-semibold">What We Learned</h2>
+                <p>
+                  This project pushed us beyond just “making things look good.”
+                  It was about solving the right problem, for the right user,
+                  with the right design. Working with a real startup challenged
+                  us to ask better questions and make more informed, intentional
+                  design choices.
+                </p>
+              </div>
+
+              {/* Blockquote / Highlight */}
+              <blockquote className="border-l-4 border-[var(--color-primary)] pl-4 italic">
+                "Design isn't just about screens — it's about clarity,
+                intention, and impact."
+              </blockquote>
+
+              {/* Collaboration */}
+              <div className="space-y-4">
+                <h2 className="text-xl font-semibold">Collaboration Wins</h2>
+                <p>
+                  Our team leaned into the process. Sketching together led to
+                  surprising ideas. Feedback sparked deeper discussions. We
+                  iterated, combined concepts, and challenged each other — and
+                  the result was a design that felt stronger than any one of us
+                  could've created alone.
+                </p>
+              </div>
+
+              {/* Forward Thinking */}
+              <div className="space-y-4">
+                <h2 className="text-xl font-semibold">Looking Ahead</h2>
+                <p>
+                  We're excited to take this prototype further — adding
+                  interaction, testing it with users, and refining based on what
+                  we learn. There's still more to explore: onboarding,
+                  discoverability, and the role AI can play in supporting
+                  developers without overwhelming them.
+                </p>
+                <p className="italic">
+                  If good design is invisible, we're on a mission to make Warp
+                  feel effortless.
                 </p>
               </div>
             </section>
