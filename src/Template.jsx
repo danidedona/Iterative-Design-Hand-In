@@ -12,7 +12,7 @@ const colors = {
   hilight: "#153A46",
   medium: "#2E5D9E",
   dark: "#FFFFFF",
-  text: "#9B9B9B",
+  text: "#BDBDBD",
   heading: "#00C2FF",
 };
 
@@ -184,7 +184,7 @@ const Template = () => {
           <div className="w-full mt-6 flex justify-center ">
             <button
               onClick={scrollToProcess}
-              className="w-full border-2 border-black text-black text-2xl font-semibold px-8 py-3 transition duration-300 hover:bg-[var(--color-light)] hover:text-[var(--color-dark)]"
+              className="w-full border-2 border-black text-black bg-white text-2xl font-semibold px-8 py-3 transition duration-300 hover:bg-[var(--color-light)] hover:text-[var(--color-dark)]"
             >
               See the process
             </button>
@@ -373,7 +373,7 @@ const Template = () => {
                   className={`block text-lg font-semibold text-left px-4 py-2 transition rounded-lg ${
                     activeSection === id
                       ? "bg-[var(--color-light)] text-[var(--color-heading)] hover:text-white"
-                      : "text-gray-400 hover:text-white"
+                      : "text-[var(--color-text)] hover:text-white"
                   }`}
                 >
                   {label}
@@ -1111,10 +1111,10 @@ const Template = () => {
                 <h2 className="text-xl font-semibold">Looking Ahead</h2>
                 <p>
                   We're excited to take this prototype further — adding
-                  interactions, testing it with different kinds of users, and refining based on what
-                  we learn. There's still more to explore: onboarding,
-                  discoverability, and the role AI can play in supporting
-                  developers without overwhelming them.
+                  interactions, testing it with different kinds of users, and
+                  refining based on what we learn. There's still more to
+                  explore: onboarding, discoverability, and the role AI can play
+                  in supporting developers without overwhelming them.
                 </p>
                 <p className="italic">
                   If good design is invisible, we're on a mission to make Warp
