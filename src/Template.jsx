@@ -832,7 +832,7 @@ const Template = () => {
               <p>
                 After submitting our Hi-Fi prototype, we had the privelage to
                 meet with two developers on the Warp team. This in-person
-                critique was a chace for us to ask questions about our design,
+                critique was a chance for us to ask questions about our design,
                 recieve meaningful and actionable feedback, and begin thinking
                 how we would continue to iterate on our prototype if this
                 project was to continue. The main pieces of feedback are
