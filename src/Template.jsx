@@ -58,9 +58,13 @@ const sketchNotes = {
     "Team Page",
     "Home Page w/ a Focus on Recent Activity",
   ],
-  Mia: ["Home Page w/ File Information", "My Account Page", "Metrics Page"],
+  Mia: [
+    "Home Page w/ File Information",
+    "Team Page",
+    "Home Page w/ Modular Components",
+  ],
   Jake: ["Home Page w/ File Information", "My Account Page", "Metrics Page"],
-  Efram: ["Home Page w/ File Information", "My Account Page", "Metrics Page"],
+  Efram: ["Home Page w/ Modular Components", "Team Page", "How To Use Page"],
 };
 
 const Template = () => {
@@ -989,7 +993,7 @@ const Template = () => {
                   It was about solving the right problem, for the right user,
                   with the right design. Working with a real startup challenged
                   us to ask better questions and make more informed, intentional
-                  design choices.
+                  design choices through every feedback cycle.
                 </p>
               </div>
 
@@ -1016,7 +1020,7 @@ const Template = () => {
                 <h2 className="text-xl font-semibold">Looking Ahead</h2>
                 <p>
                   We're excited to take this prototype further — adding
-                  interaction, testing it with users, and refining based on what
+                  interactions, testing it with different kinds of users, and refining based on what
                   we learn. There's still more to explore: onboarding,
                   discoverability, and the role AI can play in supporting
                   developers without overwhelming them.
