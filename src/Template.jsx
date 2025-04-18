@@ -7,12 +7,13 @@ import { motion, AnimatePresence } from "framer-motion";
 // </section>
 
 const colors = {
-  background: "#FBFCF6",
-  primary: "#F7D325",
-  light: "#FFEC9F",
-  medium: "#D0A832",
-  dark: "#524B43",
-  text: "#153DA2",
+  background: "#1A1A1A",
+  primary: "#00C2FF",
+  hilight: "#153A46",
+  medium: "#2E5D9E",
+  dark: "#FFFFFF",
+  text: "#9B9B9B",
+  heading: "#00C2FF",
 };
 
 const sections = [
@@ -125,10 +126,11 @@ const Template = () => {
       style={{
         "--color-background": colors.background,
         "--color-primary": colors.primary,
-        "--color-light": colors.light,
+        "--color-light": colors.hilight,
         "--color-medium": colors.medium,
         "--color-dark": colors.dark,
         "--color-text": colors.text,
+        "--color-heading": colors.heading,
       }}
       className="w-full text-center mb-8 bg-[var(--color-background)] text-[var(--color-text)]"
     >
@@ -176,7 +178,7 @@ const Template = () => {
             </AnimatePresence>
           </div>
 
-          <div className="w-full border-b border-black my-8"></div>
+          <div className="w-full border-b border-white my-8"></div>
 
           {/* Button */}
           <div className="w-full mt-6 flex justify-center ">
@@ -191,20 +193,22 @@ const Template = () => {
       </section>
 
       {/* Project Description */}
-      <section className="w-full flex flex-row py-16 px-14 bg-[var(--color-light)]">
+      <section className="w-full flex flex-col md:flex-row py-16 px-14 bg-[var(--color-light)] text-[var(--color-heading)]">
         {/* Left Side (3/4) */}
-        <div className="w-3/4 text-left">
-          <h2 className="text-3xl font-bold">Project description</h2>
-          <p className="my-4">
+        <div className="md:w-3/4 w-full text-left space-y-4">
+          <h2 className="text-3xl font-bold">Project Description</h2>
+
+          <p>
             In this project, our team partnered with Warp, a next-gen terminal
-            reimagined with AI and collaboration at its core. We aim to address
-            a key usability gap: the lack of a centralized dashboard where users
-            can manage their account, team, sessions, and explore AI features.
-            As Warp expands its collaborative and cloud-based tools, this "Home"
-            experience would serve as the foundation for a more guided,
-            discoverable, and intelligent user experience.
+            reimagined with AI and collaboration at its core. We aimed to
+            address a key usability gap: the lack of a centralized dashboard
+            where users can manage their account, team, sessions, and explore AI
+            features. As Warp expands its collaborative and cloud-based tools,
+            this "Home" experience would serve as the foundation for a more
+            guided, discoverable, and intelligent user experience.
           </p>
-          <p className="my-4">
+
+          <p>
             In working directly with a startup, this project challenged us to
             think critically about users, iterate based on feedback, and balance
             design creativity with business needs. We identified key needs,
@@ -212,6 +216,35 @@ const Template = () => {
             multiple rounds of feedback and usability testing, we refined the
             layout and content to better support essential features of the
             "Home" experience.
+          </p>
+
+          <p>
+            Our design focused on surfacing Warp's powerful features without
+            overwhelming users — from AI-assisted commands to team insights and
+            usage metrics. We prioritized clarity, accessibility, and
+            discoverability, ensuring that the interface could support both
+            power users and first-time collaborators. This homepage now acts as
+            a launchpad: a space that introduces, guides, and evolves with the
+            user.
+          </p>
+
+          <p>
+            Throughout this process, we also considered how the dashboard fits
+            into the broader Warp ecosystem. By drawing inspiration from
+            familiar tools like Figma and GitHub, we explored interface patterns
+            that could support team workflows without introducing friction. We
+            constantly weighed the tradeoffs between surfacing more information
+            and keeping the UI clean, and made decisions based on stakeholder
+            input and design best practices.
+          </p>
+
+          <p>
+            Ultimately, this project gave us a window into the real-world design
+            process: rapid iteration, collaboration across roles, and designing
+            within product and technical constraints. The "Home" interface we
+            created is not just a static layout — it's a framework for how Warp
+            can onboard, support, and empower its users from the very first
+            interaction.
           </p>
         </div>
 
@@ -228,11 +261,10 @@ const Template = () => {
           <ul className="list-disc list-inside">
             <li>
               <a
-                // potentially add our linkedin / portfolio links?
                 href="https://www.linkedin.com/in/daniela-dedona/"
                 target="_blank"
                 rel="noopener noreferrer"
-                // className="text-blue-500"
+                className="text-blue-600 hover:underline"
               >
                 Daniela DeDona
               </a>
@@ -242,7 +274,7 @@ const Template = () => {
                 href="https://www.linkedin.com/in/mia-nguyen-brownu/"
                 target="_blank"
                 rel="noopener noreferrer"
-                // className="text-blue-500"
+                className="text-blue-600 hover:underline"
               >
                 Mia Nguyen
               </a>
@@ -252,7 +284,7 @@ const Template = () => {
                 href="https://www.linkedin.com/in/jacob-stifelman/"
                 target="_blank"
                 rel="noopener noreferrer"
-                // className="text-blue-500"
+                className="text-blue-600 hover:underline"
               >
                 Jacob Stifelman
               </a>
@@ -262,9 +294,65 @@ const Template = () => {
                 href="https://www.linkedin.com/in/efram-geller-ab5638246/"
                 target="_blank"
                 rel="noopener noreferrer"
-                // className="text-blue-500"
+                className="text-blue-600 hover:underline"
               >
                 Efram Geller
+              </a>
+            </li>
+          </ul>
+
+          <h3 className="text-2xl font-bold mt-4">References</h3>
+          <ul className="list-disc list-inside space-y-1">
+            <li>
+              <a
+                href="https://www.warp.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                Warp — AI-Powered Terminal
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://docs.warp.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                Warp Documentation
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.balsamiq.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                Balsamiq — Wireframing Software
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.loom.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                Loom — Video Walkthrough Recording
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://uxdesign.cc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                UX Collective — Design Thinking
               </a>
             </li>
           </ul>
@@ -284,8 +372,8 @@ const Template = () => {
                   href={`#${id}`}
                   className={`block text-lg font-semibold text-left px-4 py-2 transition rounded-lg ${
                     activeSection === id
-                      ? "bg-[var(--color-light)] text-black"
-                      : "text-gray-400 hover:text-black"
+                      ? "bg-[var(--color-light)] text-[var(--color-heading)] hover:text-white"
+                      : "text-gray-400 hover:text-white"
                   }`}
                 >
                   {label}
@@ -301,7 +389,7 @@ const Template = () => {
               id="sketching and wireframing"
               className="text-left space-y-8"
             >
-              <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
+              <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline text-[var(--color-heading)]">
                 Sketching and Wireframing
               </h1>
 
@@ -355,14 +443,17 @@ const Template = () => {
                     {images.map((i) => {
                       const src = `/sketches/${name.toLowerCase()}${i}.png`;
                       return (
-                        <div key={i} className="flex-shrink-0 text-center">
+                        <div
+                          key={i}
+                          className="flex-shrink-0 flex flex-col items-center text-center"
+                        >
                           <img
                             src={src}
                             alt={`${name}'s sketch ${i}`}
                             onClick={() => setSelectedImage(src)}
                             className="h-[180px] w-auto rounded-md shadow-md cursor-pointer transition transform duration-300 hover:scale-105 hover:shadow-lg"
                           />
-                          <p className="mt-2 text-sm text-gray-600">
+                          <p className="mt-2 text-sm text-gray-300 max-w-[180px]">
                             {sketchNotes[name][i - 1]}
                           </p>
                         </div>
@@ -405,7 +496,7 @@ const Template = () => {
 
             {/* Wireframe Critique */}
             <section id="wireframe critique" className="text-left space-y-10">
-              <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
+              <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline text-[var(--color-heading)]">
                 Wireframe Critique
               </h1>
 
@@ -440,7 +531,7 @@ const Template = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="hidden md:flex items-center justify-center text-3xl text-gray-400">
+                  <div className="hidden md:flex items-center justify-center text-3xl text-[var(--color-heading)]">
                     →
                   </div>
                   <div className="md:w-1/2">
@@ -480,7 +571,7 @@ const Template = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="hidden md:flex items-center justify-center text-3xl text-gray-400">
+                  <div className="hidden md:flex items-center justify-center text-3xl text-[var(--color-heading)]">
                     →
                   </div>
                   <div className="md:w-1/2">
@@ -516,7 +607,7 @@ const Template = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="hidden md:flex items-center justify-center text-3xl text-gray-400">
+                  <div className="hidden md:flex items-center justify-center text-3xl text-[var(--color-heading)]">
                     →
                   </div>
                   <div className="md:w-1/2">
@@ -552,7 +643,7 @@ const Template = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="hidden md:flex items-center justify-center text-3xl text-gray-400">
+                  <div className="hidden md:flex items-center justify-center text-3xl text-[var(--color-heading)]">
                     →
                   </div>
                   <div className="md:w-1/2">
@@ -583,7 +674,7 @@ const Template = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="hidden md:flex items-center justify-center text-3xl text-gray-400">
+                  <div className="hidden md:flex items-center justify-center text-3xl text-[var(--color-heading)]">
                     →
                   </div>
                   <div className="md:w-1/2">
@@ -619,35 +710,35 @@ const Template = () => {
 
             {/* Hi-Fi Prototype */}
             <section id="hifi prototype" className="text-left space-y-8">
-              <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
+              <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline text-[var(--color-heading)]">
                 Hi-Fi Prototype
               </h1>
 
               <p>
                 Building on the wireframes and stakeholder critique, we crafted
                 a <span className="font-semibold">Hi-Fi Figma prototype</span>{" "}
-                that looks, feels, and navigates like finished Warp Home.
+                that looks, feels, and navigates like finished Warp Home.
               </p>
 
               <p>
-                <span className="font-semibold">Home dashboard.</span> We pulled
+                <span className="font-semibold">Home dashboard.</span> We pulled
                 the most requested onboarding featured directly onto the landing
-                view: a “Getting Started” card for brand‑new users that they
+                view: a “Getting Started” card for brand-new users that they
                 don't have to search for. An updates{" "}
                 <span className="font-semibold">Updates</span> panel
-                highlighting recent Warp changes and a horizontally‑scrollable{" "}
-                <span className="font-semibold">Recent Activity</span> carousel
-                letting quickly jump into their previous work. The existing
-                Warp Drive stays on the left, while the new Warp Home sidebar
+                highlighting recent Warp changes and a horizontally-scrollable{" "}
+                <span className="font-semibold">Recent Activity</span> carousel
+                letting quickly jump into their previous work. The existing Warp
+                Drive stays on the left, while the new Warp Home sidebar
                 navigation can be toggled as well. The two swap with each other
                 when clicked.
               </p>
 
               <p>
-                <span className="font-semibold">Teams view.</span> Inspired by
-                Figma's layout, the Teams page now opens with top‑level team
+                <span className="font-semibold">Teams view.</span> Inspired by
+                Figma's layout, the Teams page now opens with top-level team
                 tiles that expose member count and recent activity. Selecting a
-                team slides Warp Drive into view and surfaces{" "}
+                team slides Warp Drive into view and surfaces{" "}
                 <span className="font-semibold">
                   templates, live activity, and all team files
                 </span>{" "}
@@ -655,15 +746,15 @@ const Template = () => {
               </p>
 
               <p>
-                <span className="font-semibold">Billing.</span> Critique called
-                our old billing mock salesy and in your face. We stripped the
+                <span className="font-semibold">Billing.</span> Critique called
+                our old billing mock salesy and in your face. We stripped the
                 upsell banners introduced a calm layout: current plan, paid
                 seats vs. total team size, clear invoices, and simple{" "}
-                <span className="font-semibold">Manage </span> button.
+                <span className="font-semibold">Manage </span> button.
               </p>
 
               <p>
-                <span className="font-semibold">Metrics.</span> Because admins
+                <span className="font-semibold">Metrics.</span> Because admins
                 measure ROI, we replaced generic charts with{" "}
                 <span className="font-semibold">
                   AI usage rate, estimated time saved, team speed , and commmand
@@ -683,7 +774,7 @@ const Template = () => {
                     in a tab.
                   </li>
                   <li>
-                    Kept Warp Drive as a permanent feautre; Warp Home sidebar is
+                    Kept Warp Drive as a permanent feautre; Warp Home sidebar is
                     available and swaps with Warp Drive
                   </li>
                   <li>Grouped Teams → Members → Files like Figma</li>
@@ -700,10 +791,10 @@ const Template = () => {
               </p>
 
               <p>
-                Our hi‑fi prototype aims to{" "}
+                Our hi-fi prototype aims to{" "}
                 <span className="font-semibold">
                   addresses the critical pain points surfaced in critique and
-                  demonstrates a cohesive, production‑ready workflow
+                  demonstrates a cohesive, production-ready workflow
                 </span>
                 .
               </p>
@@ -734,7 +825,7 @@ const Template = () => {
 
             {/* Final Critique */}
             <section id="final critique" className="text-left space-y-8">
-              <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
+              <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline text-[var(--color-heading)]">
                 Final Critique
               </h1>
 
@@ -773,7 +864,7 @@ const Template = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="hidden md:flex items-center justify-center text-3xl text-gray-400">
+                  <div className="hidden md:flex items-center justify-center text-3xl text-[var(--color-heading)]">
                     →
                   </div>
                   <div className="md:w-1/2">
@@ -819,7 +910,7 @@ const Template = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="hidden md:flex items-center justify-center text-3xl text-gray-400">
+                  <div className="hidden md:flex items-center justify-center text-3xl text-[var(--color-heading)]">
                     →
                   </div>
                   <div className="md:w-1/2">
@@ -861,7 +952,7 @@ const Template = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="hidden md:flex items-center justify-center text-3xl text-gray-400">
+                  <div className="hidden md:flex items-center justify-center text-3xl text-[var(--color-heading)]">
                     →
                   </div>
                   <div className="md:w-1/2">
@@ -900,7 +991,7 @@ const Template = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="hidden md:flex items-center justify-center text-3xl text-gray-400">
+                  <div className="hidden md:flex items-center justify-center text-3xl text-[var(--color-heading)]">
                     →
                   </div>
                   <div className="md:w-1/2">
@@ -941,7 +1032,7 @@ const Template = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="hidden md:flex items-center justify-center text-3xl text-gray-400">
+                  <div className="hidden md:flex items-center justify-center text-3xl text-[var(--color-heading)]">
                     →
                   </div>
                   <div className="md:w-1/2">
@@ -981,7 +1072,7 @@ const Template = () => {
 
             {/* Reflection */}
             <section id="reflection" className="text-left space-y-10">
-              <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline">
+              <h1 className="text-3xl font-bold bg-[var(--color-light)] p-2 inline text-[var(--color-heading)]">
                 Reflection
               </h1>
 
