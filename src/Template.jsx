@@ -273,7 +273,7 @@ const Template = () => {
 
       {/* Main Scroll Section */}
       <section ref={processRef}>
-        <h2 className="text-3xl py-16 px-14 text-left font-bold">Heading</h2>
+        <h2 className="text-3xl py-16 px-14 text-left font-bold">Process</h2>
         <div className="w-full flex flex-row py-16 px-14 bg-opacity-70 relative">
           {/* Sidebar Navigation */}
           <div className="w-1/4">
